@@ -6,6 +6,7 @@ project(FlightBookingApp LANGUAGES CXX)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
 # Enable Qt's automatic MOC/UIC/RCC processing
+
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -18,12 +19,14 @@ add_executable(FlightBookingApp
     src/models/Booking.cpp
     src/models/SeatMap.cpp
     src/services/BookingSystem.cpp
+    src/ui/MainWindow.cpp
+    src/ui/BookFlightDialog.cpp
 )
-
-# Link against Qt Widgets
-target_link_libraries(FlightBookingApp PRIVATE Qt6::Widgets)
 
 # Where to look for headers
 target_include_directories(FlightBookingApp PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
+
+# Link against Qt Widgets module
+target_link_libraries(FlightBookingApp PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)

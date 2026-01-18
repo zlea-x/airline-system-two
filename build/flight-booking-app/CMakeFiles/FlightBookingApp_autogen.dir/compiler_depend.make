@@ -168,7 +168,9 @@ flight-booking-app/FlightBookingApp_autogen/timestamp: C:/Program\ Files/CMake/b
   C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/models/Flight.cpp \
   C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/models/Passenger.cpp \
   C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/models/SeatMap.cpp \
-  C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/services/BookingSystem.cpp
+  C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/services/BookingSystem.cpp \
+  C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/BookFlightDialog.cpp \
+  C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/MainWindow.cpp
 
 
 C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake:
@@ -506,3 +508,7 @@ C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/mod
 C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/models/Passenger.cpp:
 
 C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/services/BookingSystem.cpp:
+
+C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/BookFlightDialog.cpp:
+
+C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/MainWindow.cpp:

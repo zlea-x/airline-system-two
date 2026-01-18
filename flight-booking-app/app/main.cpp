@@ -1,6 +1,7 @@
 #include <QApplication>
 #include <QMainWindow>
 #include "services/BookingSystem.h"
+#include "ui/MainWindow.h"
 #include <iostream>
 
 int main(int argc, char *argv[])
@@ -15,9 +16,8 @@ int main(int argc, char *argv[])
     // Start Qt application (GUI layer)
     QApplication app(argc, argv);
 
-    QMainWindow window;
-    window.setWindowTitle("Flight Booking System");
-    window.resize(800, 600);
+    // Inheritance: MainWindow is a QMainWindow
+    MainWindow window(&system);
     window.show();
 
     return app.exec();

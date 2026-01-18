@@ -325,6 +325,54 @@ src/services/BookingSystem.cpp.s:
 	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build && $(MAKE) $(MAKESILENT) -f flight-booking-app\CMakeFiles\FlightBookingApp.dir\build.make flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/services/BookingSystem.cpp.s
 .PHONY : src/services/BookingSystem.cpp.s
 
+src/ui/BookFlightDialog.obj: src/ui/BookFlightDialog.cpp.obj
+.PHONY : src/ui/BookFlightDialog.obj
+
+# target to build an object file
+src/ui/BookFlightDialog.cpp.obj:
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build && $(MAKE) $(MAKESILENT) -f flight-booking-app\CMakeFiles\FlightBookingApp.dir\build.make flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj
+.PHONY : src/ui/BookFlightDialog.cpp.obj
+
+src/ui/BookFlightDialog.i: src/ui/BookFlightDialog.cpp.i
+.PHONY : src/ui/BookFlightDialog.i
+
+# target to preprocess a source file
+src/ui/BookFlightDialog.cpp.i:
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build && $(MAKE) $(MAKESILENT) -f flight-booking-app\CMakeFiles\FlightBookingApp.dir\build.make flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.i
+.PHONY : src/ui/BookFlightDialog.cpp.i
+
+src/ui/BookFlightDialog.s: src/ui/BookFlightDialog.cpp.s
+.PHONY : src/ui/BookFlightDialog.s
+
+# target to generate assembly for a file
+src/ui/BookFlightDialog.cpp.s:
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build && $(MAKE) $(MAKESILENT) -f flight-booking-app\CMakeFiles\FlightBookingApp.dir\build.make flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.s
+.PHONY : src/ui/BookFlightDialog.cpp.s
+
+src/ui/MainWindow.obj: src/ui/MainWindow.cpp.obj
+.PHONY : src/ui/MainWindow.obj
+
+# target to build an object file
+src/ui/MainWindow.cpp.obj:
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build && $(MAKE) $(MAKESILENT) -f flight-booking-app\CMakeFiles\FlightBookingApp.dir\build.make flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj
+.PHONY : src/ui/MainWindow.cpp.obj
+
+src/ui/MainWindow.i: src/ui/MainWindow.cpp.i
+.PHONY : src/ui/MainWindow.i
+
+# target to preprocess a source file
+src/ui/MainWindow.cpp.i:
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build && $(MAKE) $(MAKESILENT) -f flight-booking-app\CMakeFiles\FlightBookingApp.dir\build.make flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.i
+.PHONY : src/ui/MainWindow.cpp.i
+
+src/ui/MainWindow.s: src/ui/MainWindow.cpp.s
+.PHONY : src/ui/MainWindow.s
+
+# target to generate assembly for a file
+src/ui/MainWindow.cpp.s:
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build && $(MAKE) $(MAKESILENT) -f flight-booking-app\CMakeFiles\FlightBookingApp.dir\build.make flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.s
+.PHONY : src/ui/MainWindow.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -357,6 +405,12 @@ help:
 	@echo ... src/services/BookingSystem.obj
 	@echo ... src/services/BookingSystem.i
 	@echo ... src/services/BookingSystem.s
+	@echo ... src/ui/BookFlightDialog.obj
+	@echo ... src/ui/BookFlightDialog.i
+	@echo ... src/ui/BookFlightDialog.s
+	@echo ... src/ui/MainWindow.obj
+	@echo ... src/ui/MainWindow.i
+	@echo ... src/ui/MainWindow.s
 .PHONY : help
 
 

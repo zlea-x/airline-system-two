@@ -166,4 +166,6 @@ FlightBookingApp_autogen/timestamp: \
 	C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/models/Passenger.cpp \
 	C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/models/SeatMap.cpp \
 	C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/services/BookingSystem.cpp \
+	C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/BookFlightDialog.cpp \
+	C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/MainWindow.cpp \
 	C:/Program\ Files/CMake/bin/cmake.exe

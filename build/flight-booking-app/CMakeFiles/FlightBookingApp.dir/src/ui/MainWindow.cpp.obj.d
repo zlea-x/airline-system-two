@@ -1,7 +1,8 @@
-flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
- C:\Users\Azalea\ Akpokugbe\Desktop\airline-system-two\flight-booking-app\app\main.cpp \
- C:/Qt/6.10.1/mingw_64/include/QtWidgets/QApplication \
- C:/Qt/6.10.1/mingw_64/include/QtWidgets/qapplication.h \
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj: \
+ C:\Users\Azalea\ Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\ui\MainWindow.cpp \
+ C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/ui/MainWindow.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qtguiglobal.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qglobal.h \
@@ -155,9 +156,10 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qtguiexports.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qcoreapplication.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qstring.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qchar.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qobjectdefs.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qcompare.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qstdlibdetection.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qcomparehelpers.h \
@@ -188,22 +190,14 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/vector.tcc \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/array \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qstringview.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qbytearray.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qrefcount.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qtmetamacros.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qarraydata.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qpair.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/string.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qarraydatapointer.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qarraydataops.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qcontainertools_impl.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qxptype_traits.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qobjectdefs_impl.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qfunctionaltools_impl.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
@@ -214,17 +208,8 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/_mingw_stat64.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/swprintf.inl \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/locale.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdio.h \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ctype.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
@@ -242,6 +227,39 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_compat.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_unistd.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/concurrence.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
+ C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qstring.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qchar.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qstringview.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qbytearray.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qrefcount.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qarraydata.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qpair.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/string.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qarraydatapointer.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qarraydataops.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qcontainertools_impl.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qxptype_traits.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stream_iterator.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/streambuf \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/locale.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/stdio.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ctype.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
@@ -260,17 +278,6 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdexcept \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf.tcc \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_raw_storage_iter.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/align.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_base.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocated_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/concurrence.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/shared_ptr_atomic.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward/auto_ptr.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/glue_memory_defs.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/q20functional.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/q20memory.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/q17memory.h \
@@ -289,13 +296,6 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qstringbuilder.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qstringconverter.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qstringconverter_base.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qcoreevent.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qbasictimer.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qabstracteventdispatcher.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qobject.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qobjectdefs.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qobjectdefs_impl.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qfunctionaltools_impl.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qlist.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qhashfunctions.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
@@ -331,23 +331,18 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qeventloop.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qnativeinterface.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qcoreapplication_platform.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qwindowdefs_win.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qpoint.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qmargins.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qcheckedint_impl.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/q23utility.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/q20utility.h \
+ C:/Qt/6.10.1/mingw_64/include/QtGui/qaction.h \
+ C:/Qt/6.10.1/mingw_64/include/QtGui/qkeysequence.h \
+ C:/Qt/6.10.1/mingw_64/include/QtGui/qicon.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qsize.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qmargins.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qcursor.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qpixmap.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qpaintdevice.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qrect.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qpoint.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qcolor.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qrgb.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qrgba64.h \
@@ -361,9 +356,6 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Qt/6.10.1/mingw_64/include/QtCore/q20iterator.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qline.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qguiapplication.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.10.1/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qvariant.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qdebug.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qtextstream.h \
@@ -382,13 +374,6 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qhash.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qalloc.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qguiapplication_platform.h \
- C:/Qt/6.10.1/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmainwindow.h \
- C:/Qt/6.10.1/mingw_64/include/QtWidgets/qwidget.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qaction.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qkeysequence.h \
- C:/Qt/6.10.1/mingw_64/include/QtGui/qicon.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qpalette.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qbrush.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qfont.h \
@@ -397,13 +382,9 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qfontinfo.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qfontvariableaxis.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qsizepolicy.h \
+ C:/Qt/6.10.1/mingw_64/include/QtGui/qcursor.h \
+ C:/Qt/6.10.1/mingw_64/include/QtGui/qbitmap.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtabwidget.h \
- C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/services/BookingSystem.h \
- C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/Flight.h \
- C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/Passenger.h \
- C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/Booking.h \
- C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/SeatMap.h \
- C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/ui/MainWindow.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/QTableWidget \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtablewidget.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qtableview.h \
@@ -414,6 +395,7 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qitemselectionmodel.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/Qt/6.10.1/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
  C:/Qt/6.10.1/mingw_64/include/QtGui/qvalidator.h \
  C:/Qt/6.10.1/mingw_64/include/QtCore/qregularexpression.h \
@@ -433,17 +415,24 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/app/main.cpp.obj: \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/QPushButton \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/Qt/6.10.1/mingw_64/include/QtWidgets/qabstractbutton.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwctype \
- C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets.tcc \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream.tcc \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/istream.tcc
+ C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/services/BookingSystem.h \
+ C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/Flight.h \
+ C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/Passenger.h \
+ C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/Booking.h \
+ C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/models/SeatMap.h \
+ C:/Users/AZALEA~1/Desktop/AIRLIN~1/FLIGHT~1/include/ui/BookFlightDialog.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/QHBoxLayout \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/QHeaderView \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qheaderview.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/QMessageBox \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qmessagebox.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.10.1/mingw_64/include/QtWidgets/qdialogbuttonbox.h

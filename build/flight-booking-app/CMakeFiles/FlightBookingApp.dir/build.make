@@ -183,6 +183,36 @@ flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/services/BookingSystem.cp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FlightBookingApp.dir/src/services/BookingSystem.cpp.s"
 	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\services\BookingSystem.cpp" -o CMakeFiles\FlightBookingApp.dir\src\services\BookingSystem.cpp.s
 
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj: flight-booking-app/CMakeFiles/FlightBookingApp.dir/flags.make
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj: flight-booking-app/CMakeFiles/FlightBookingApp.dir/includes_CXX.rsp
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj: C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/MainWindow.cpp
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj: flight-booking-app/CMakeFiles/FlightBookingApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj"
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj -MF CMakeFiles\FlightBookingApp.dir\src\ui\MainWindow.cpp.obj.d -o CMakeFiles\FlightBookingApp.dir\src\ui\MainWindow.cpp.obj -c "C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\ui\MainWindow.cpp"
+
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.i"
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\ui\MainWindow.cpp" > CMakeFiles\FlightBookingApp.dir\src\ui\MainWindow.cpp.i
+
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.s"
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\ui\MainWindow.cpp" -o CMakeFiles\FlightBookingApp.dir\src\ui\MainWindow.cpp.s
+
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj: flight-booking-app/CMakeFiles/FlightBookingApp.dir/flags.make
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj: flight-booking-app/CMakeFiles/FlightBookingApp.dir/includes_CXX.rsp
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj: C:/Users/Azalea\ Akpokugbe/Desktop/airline-system-two/flight-booking-app/src/ui/BookFlightDialog.cpp
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj: flight-booking-app/CMakeFiles/FlightBookingApp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj"
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj -MF CMakeFiles\FlightBookingApp.dir\src\ui\BookFlightDialog.cpp.obj.d -o CMakeFiles\FlightBookingApp.dir\src\ui\BookFlightDialog.cpp.obj -c "C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\ui\BookFlightDialog.cpp"
+
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.i"
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\ui\BookFlightDialog.cpp" > CMakeFiles\FlightBookingApp.dir\src\ui\BookFlightDialog.cpp.i
+
+flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.s"
+	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\flight-booking-app\src\ui\BookFlightDialog.cpp" -o CMakeFiles\FlightBookingApp.dir\src\ui\BookFlightDialog.cpp.s
+
 # Object files for target FlightBookingApp
 FlightBookingApp_OBJECTS = \
 "CMakeFiles/FlightBookingApp.dir/FlightBookingApp_autogen/mocs_compilation.cpp.obj" \
@@ -191,7 +221,9 @@ FlightBookingApp_OBJECTS = \
 "CMakeFiles/FlightBookingApp.dir/src/models/Passenger.cpp.obj" \
 "CMakeFiles/FlightBookingApp.dir/src/models/Booking.cpp.obj" \
 "CMakeFiles/FlightBookingApp.dir/src/models/SeatMap.cpp.obj" \
-"CMakeFiles/FlightBookingApp.dir/src/services/BookingSystem.cpp.obj"
+"CMakeFiles/FlightBookingApp.dir/src/services/BookingSystem.cpp.obj" \
+"CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj" \
+"CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj"
 
 # External object files for target FlightBookingApp
 FlightBookingApp_EXTERNAL_OBJECTS =
@@ -203,6 +235,8 @@ flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBoo
 flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/models/Booking.cpp.obj
 flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/models/SeatMap.cpp.obj
 flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/services/BookingSystem.cpp.obj
+flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/MainWindow.cpp.obj
+flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/src/ui/BookFlightDialog.cpp.obj
 flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/build.make
 flight-booking-app/FlightBookingApp.exe: C:/Qt/6.10.1/mingw_64/lib/libQt6Widgets.a
 flight-booking-app/FlightBookingApp.exe: C:/Qt/6.10.1/mingw_64/lib/libQt6Gui.a
@@ -210,7 +244,7 @@ flight-booking-app/FlightBookingApp.exe: C:/Qt/6.10.1/mingw_64/lib/libQt6Core.a
 flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/linkLibs.rsp
 flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/objects1.rsp
 flight-booking-app/FlightBookingApp.exe: flight-booking-app/CMakeFiles/FlightBookingApp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable FlightBookingApp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\Azalea Akpokugbe\Desktop\airline-system-two\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable FlightBookingApp.exe"
 	cd /d C:\Users\AZALEA~1\Desktop\AIRLIN~1\build\FLIGHT~1 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\FlightBookingApp.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

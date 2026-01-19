@@ -11,7 +11,9 @@
 
 // Inheritance: MainWindow IS-A QMainWindow
 class MainWindow : public QMainWindow
-{
+{ 
+    Q_OBJECT
+    
 public:
     explicit MainWindow(BookingSystem* system, QWidget* parent = nullptr);
 

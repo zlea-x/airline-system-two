@@ -48,7 +48,30 @@ void MainWindow::setupUi()
     // Check Flight Status (Online)
 
     auto* statusGroup = new QGroupBox("Check Flight Status (Online)", m_centralWidget);
-    auto* statusLayout = new QFormLayout(statusGroup);
+    auto* statusLayout = new QFormLayout(statusGroupBox);
+ 
+    m_flightNumberEdit = new QLineEdit(statusGroupBox);
+    statusLayout->addRow("Flight number:", m_flightNumberEdit);
+
+    m_flightDateEdit = new QDateEdit(QDate::currentDate(), statusGroupBox);
+    m_flightDateEdit->setCalendarPopup(true);
+    statusLayout->addRow("Date:", m_flightDateEdit);
+
+    m_checkStatusButton = new QPushButton("Check status", statusGroupBox);
+    statusLayout->addRow(m_checkStatusButton);
+
+    m_statusValueLabel = new QLabel(statusGroupBox);
+    m_departureTimeValueLabel = new QLabel(statusGroupBox);
+    m_arrivalTimeValueLabel = new QLabel(statusGroupBox);
+    m_routeValueLabel = new QLabel(statusGroupBox);
+
+    statusLayout->addRow("Status:", m_statusValueLabel);
+    statusLayout->addRow("Departure time:", m_departureTimeValueLabel);
+    statusLayout->addRow("Arrival time:", m_arrivalTimeValueLabel);
+    statusLayout->addRow("Route:", m_routeValueLabel);
+
+    mainLayout->addWidget(statusGroupBox);
+
 
     m_centralWidget->setLayout(mainLayout);
     setCentralWidget(m_centralWidget);
@@ -64,6 +87,8 @@ void MainWindow::setupUi()
             this, [this](int row, int column) {
         handleFlightDoubleClicked(row, column);
     });
+
+    connect(m_checkStatusButton, &QPushButton::clicked, this, &MainWindow::onCheckStatusClicked); //check status button
 }
 
 void MainWindow::populateFlights(const std::vector<Flight>& flights)
@@ -118,4 +143,22 @@ void MainWindow::handleFlightDoubleClicked(int row, int)
     // Open booking dialog instead of showing details
     BookFlightDialog dialog(flightId, m_system, this);
     dialog.exec();
+}
+
+void MainWindow::onCheckStatusClicked() //check status 
+{
+    QString flightNumber = m_flightNumberEdit->text();
+    QDate date = m_flightDateEdit->date();
+
+    if (flightNumber.trimmed().isEmpty()) {
+        m_statusValueLabel->setText("Enter a flight number.");
+        return;
+    }
+
+    m_statusValueLabel->setText("Loading...");
+    m_departureTimeValueLabel->clear();
+    m_arrivalTimeValueLabel->clear();
+    m_routeValueLabel->clear();
+
+    //THE AEROBOX API CALL WILL GO HERE
 }

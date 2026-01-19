@@ -5,7 +5,8 @@
 #include <QTableWidget>
 #include <QLineEdit>
 #include <QPushButton>
-
+#include <QDateEdit>
+#include <QLabel>
 #include "services/BookingSystem.h"
 
 // Inheritance: MainWindow IS-A QMainWindow
@@ -24,11 +25,23 @@ private:
     QPushButton*  m_searchButton;
     QTableWidget* m_flightTable;
 
+    // Widgets for Check Flight Status 
+    QLineEdit* m_flightNumberEdit;
+    QDateEdit* m_flightDateEdit;
+    QLabel* m_statusValueLabel;
+    QLabel* m_departureTimeValueLabel;
+    QLabel* m_arrivalTimeValueLabel;
+    QLabel* m_routeValueLabel;
+
     void setupUi();
     void populateFlights(const std::vector<Flight>& flights);
 
     void handleSearchClicked();
     void handleFlightDoubleClicked(int row, int column);
+
+
+private slots:
+    void onCheckStatusClicked(); 
 };
 
 #endif

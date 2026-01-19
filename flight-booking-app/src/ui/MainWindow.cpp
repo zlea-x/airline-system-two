@@ -45,6 +45,11 @@ void MainWindow::setupUi()
     mainLayout->addLayout(searchLayout);
     mainLayout->addWidget(m_flightTable);
 
+    // Check Flight Status (Online)
+
+    auto* statusGroup = new QGroupBox("Check Flight Status (Online)", m_centralWidget);
+    auto* statusLayout = new QFormLayout(statusGroup);
+
     m_centralWidget->setLayout(mainLayout);
     setCentralWidget(m_centralWidget);
     setWindowTitle("Flight Booking System");

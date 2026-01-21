@@ -53,6 +53,8 @@ std::vector<Flight> AeroboxServiceImpl::fetchFlights(const QString& flightNumber
     QJsonDocument doc = QJsonDocument::fromJson(reply->readAll());
     reply->deleteLater();
 
+    qDebug() << "RAW JSON:" << doc.toJson(QJsonDocument::Compact);
+
     if (!doc.isArray()) {
         qDebug() << "Unexpected JSON format (not array)";
         return flights;

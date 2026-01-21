@@ -2,11 +2,10 @@ cmake_minimum_required(VERSION 3.16)
 
 project(FlightBookingApp LANGUAGES CXX)
 
-# Find Qt 6 Widgets module
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
+# Find Qt 6 Widgets + Network modules
+find_package(Qt6 REQUIRED COMPONENTS Widgets Network)
 
 # Enable Qt's automatic MOC/UIC/RCC processing
-
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
@@ -19,6 +18,7 @@ add_executable(FlightBookingApp
     src/models/Booking.cpp
     src/models/SeatMap.cpp
     src/services/BookingSystem.cpp
+    src/services/AeroboxServiceImpl.cpp
     src/ui/MainWindow.cpp
     src/ui/BookFlightDialog.cpp
 )
@@ -28,5 +28,10 @@ target_include_directories(FlightBookingApp PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
-# Link against Qt Widgets module
-target_link_libraries(FlightBookingApp PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
+# Link against Qt modules
+target_link_libraries(FlightBookingApp PRIVATE
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Widgets
+    Qt6::Network
+)

@@ -6,10 +6,10 @@
 
 class BookFlightDialog : public QDialog
 {
-    Q_OBJECT  // ← REQUIRED!
+
 
 public:
-    BookFlightDialog(int flightId, BookingSystem* system, QWidget* parent = nullptr);
+    explicit BookFlightDialog(int flightId, BookingSystem* system, QWidget* parent = nullptr);
 
 private slots:
     void confirmBooking();

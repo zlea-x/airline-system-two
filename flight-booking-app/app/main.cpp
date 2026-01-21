@@ -1,22 +1,16 @@
 #include <QApplication>
-#include <QMainWindow>
+
 #include "services/BookingSystem.h"
+#include "services/AeroboxServiceImpl.h"
 #include "ui/MainWindow.h"
-#include <iostream>
 
 int main(int argc, char *argv[])
 {
-    // Create the core booking engine (abstraction, encapsulation)
-    BookingSystem system;
+    QApplication app(argc, argv);   
 
-    // Quick console check: how many flights are loaded
-    auto flights = system.getFlights();
-    std::cout << "Flights loaded: " << flights.size() << std::endl;
+    AeroboxServiceImpl aeroboxService;
+    BookingSystem system(&aeroboxService);
 
-    // Start Qt application (GUI layer)
-    QApplication app(argc, argv);
-
-    // Inheritance: MainWindow is a QMainWindow
     MainWindow window(&system);
     window.show();
 

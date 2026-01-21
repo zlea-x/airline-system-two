@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"C:/Users/Azalea Akpokugbe/Desktop/airline-system-two/build/cmake_install.cmake",
-		"C:/Users/Azalea Akpokugbe/Desktop/airline-system-two/build/flight-booking-app/cmake_install.cmake"
-	],
-	"Parallel" : false
-}

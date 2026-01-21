@@ -12,7 +12,6 @@
 // Inheritance: MainWindow IS-A QMainWindow
 class MainWindow : public QMainWindow
 { 
-    Q_OBJECT
     
 public:
     explicit MainWindow(BookingSystem* system, QWidget* parent = nullptr);
@@ -28,8 +27,11 @@ private:
     QTableWidget* m_flightTable;
 
     // Widgets for Check Flight Status 
+    QPushButton* m_cancelFlightButton;
+
     QLineEdit* m_flightNumberEdit;
     QDateEdit* m_flightDateEdit;
+    QPushButton* m_checkStatusButton;  
     QLabel* m_statusValueLabel;
     QLabel* m_departureTimeValueLabel;
     QLabel* m_arrivalTimeValueLabel;
@@ -44,6 +46,7 @@ private:
 
 private slots:
     void onCheckStatusClicked(); 
+    void onCancelFlightClicked();
 };
 
 #endif

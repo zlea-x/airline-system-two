@@ -1,12 +1,22 @@
 #include "ui/MainWindow.h"
 #include "ui/BookFlightDialog.h"
 
-
 #include <QVBoxLayout>
 #include <QHBoxLayout>
+#include <QFormLayout>
+#include <QGroupBox>
 #include <QHeaderView>
 #include <QMessageBox>
+#include <QAbstractItemView>
+#include <QDate>
+#include <QDateEdit>
+#include <QLineEdit>
+#include <QPushButton>
+#include <QLabel>
+#include <QTableWidget>
+#include <QTableWidgetItem>
 
+// Constructor
 MainWindow::MainWindow(BookingSystem* system, QWidget* parent)
     : QMainWindow(parent),
       m_system(system)
@@ -15,12 +25,13 @@ MainWindow::MainWindow(BookingSystem* system, QWidget* parent)
     populateFlights(m_system->getFlights());
 }
 
+// 6.1 setupUi: layout + connections
 void MainWindow::setupUi()
 {
     m_centralWidget = new QWidget(this);
     auto* mainLayout = new QVBoxLayout(m_centralWidget);
 
-    // Search controls
+    // Search controls (local demo: origin/destination)
     auto* searchLayout = new QHBoxLayout();
     m_originEdit = new QLineEdit(m_centralWidget);
     m_originEdit->setPlaceholderText("Origin (e.g. ABV)");
@@ -32,7 +43,7 @@ void MainWindow::setupUi()
     searchLayout->addWidget(m_destinationEdit);
     searchLayout->addWidget(m_searchButton);
 
-    // Table of flights
+    // Table of flights (local sample data)
     m_flightTable = new QTableWidget(m_centralWidget);
     m_flightTable->setColumnCount(5);
     QStringList headers;
@@ -42,14 +53,17 @@ void MainWindow::setupUi()
     m_flightTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
     m_flightTable->setSelectionBehavior(QAbstractItemView::SelectRows);
 
+    // Cancel button (local)
+    m_cancelFlightButton = new QPushButton("Cancel selected flight", m_centralWidget);
+
     mainLayout->addLayout(searchLayout);
     mainLayout->addWidget(m_flightTable);
+    mainLayout->addWidget(m_cancelFlightButton);
 
     // Check Flight Status (Online)
-
-    auto* statusGroup = new QGroupBox("Check Flight Status (Online)", m_centralWidget);
+    auto* statusGroupBox = new QGroupBox("Check Flight Status (Online)", m_centralWidget);
     auto* statusLayout = new QFormLayout(statusGroupBox);
- 
+
     m_flightNumberEdit = new QLineEdit(statusGroupBox);
     statusLayout->addRow("Flight number:", m_flightNumberEdit);
 
@@ -72,25 +86,27 @@ void MainWindow::setupUi()
 
     mainLayout->addWidget(statusGroupBox);
 
-
     m_centralWidget->setLayout(mainLayout);
     setCentralWidget(m_centralWidget);
+
     setWindowTitle("Flight Booking System");
     resize(900, 600);
 
-    // Connect signals to plain member functions
-    connect(m_searchButton, &QPushButton::clicked, this, [this]() {
-        handleSearchClicked();
-    });
+    // Connect signals
+    connect(m_searchButton, &QPushButton::clicked,
+            this, &MainWindow::handleSearchClicked);
 
     connect(m_flightTable, &QTableWidget::cellDoubleClicked,
-            this, [this](int row, int column) {
-        handleFlightDoubleClicked(row, column);
-    });
+            this, &MainWindow::handleFlightDoubleClicked);
 
-    connect(m_checkStatusButton, &QPushButton::clicked, this, &MainWindow::onCheckStatusClicked); //check status button
+    connect(m_checkStatusButton, &QPushButton::clicked,
+            this, &MainWindow::onCheckStatusClicked);
+
+    connect(m_cancelFlightButton, &QPushButton::clicked,
+            this, &MainWindow::onCancelFlightClicked);
 }
 
+// 6.2 populateFlights: fill table from a list of Flight
 void MainWindow::populateFlights(const std::vector<Flight>& flights)
 {
     m_flightTable->setRowCount(static_cast<int>(flights.size()));
@@ -121,15 +137,28 @@ void MainWindow::populateFlights(const std::vector<Flight>& flights)
     }
 }
 
+// 6.3 handleSearchClicked: local filter by origin/destination
 void MainWindow::handleSearchClicked()
 {
     std::string origin = m_originEdit->text().trimmed().toStdString();
     std::string destination = m_destinationEdit->text().trimmed().toStdString();
 
-    auto results = m_system->searchFlights(origin, destination);
-    populateFlights(results);
+    std::vector<Flight> all = m_system->getFlights();
+    std::vector<Flight> filtered;
+
+    for (const auto& f : all) {
+        bool matchOrigin = origin.empty() || f.getOrigin() == origin;
+        bool matchDest   = destination.empty() || f.getDestination() == destination;
+
+        if (matchOrigin && matchDest) {
+            filtered.push_back(f);
+        }
+    }
+
+    populateFlights(filtered);
 }
 
+// 6.4 handleFlightDoubleClicked: open booking dialog
 void MainWindow::handleFlightDoubleClicked(int row, int)
 {
     if (row < 0 || row >= m_flightTable->rowCount()) {
@@ -140,12 +169,12 @@ void MainWindow::handleFlightDoubleClicked(int row, int)
     int flightId = m_flightTable->item(row, 0)->text().toInt(&ok);
     if (!ok) return;
 
-    // Open booking dialog instead of showing details
     BookFlightDialog dialog(flightId, m_system, this);
     dialog.exec();
 }
 
-void MainWindow::onCheckStatusClicked() //check status 
+// 6.5 onCheckStatusClicked: call remote API via BookingSystem
+void MainWindow::onCheckStatusClicked()
 {
     QString flightNumber = m_flightNumberEdit->text();
     QDate date = m_flightDateEdit->date();
@@ -155,10 +184,66 @@ void MainWindow::onCheckStatusClicked() //check status
         return;
     }
 
+    QString dateStr = date.toString("yyyy-MM-dd");
+
     m_statusValueLabel->setText("Loading...");
     m_departureTimeValueLabel->clear();
     m_arrivalTimeValueLabel->clear();
     m_routeValueLabel->clear();
 
-    //THE AEROBOX API CALL WILL GO HERE
+    // Call BookingSystem -> Aerobox (search by flight number + date)
+    auto results = m_system->searchFlights(
+        flightNumber.toStdString(),
+        dateStr.toStdString());
+
+    if (results.empty()) {
+        m_statusValueLabel->setText("No flights found.");
+        return;
+    }
+
+    const Flight& f = results[0];
+
+    m_statusValueLabel->setText("Scheduled");
+    m_departureTimeValueLabel->setText(
+        QString::fromStdString(f.getDepartureTime()));
+    m_arrivalTimeValueLabel->setText(
+        QString::fromStdString(f.getArrivalTime()));
+    m_routeValueLabel->setText(
+        QString("%1 → %2")
+            .arg(QString::fromStdString(f.getOrigin()),
+                 QString::fromStdString(f.getDestination())));
+}
+
+// 6.6 onCancelFlightClicked: local cancel
+void MainWindow::onCancelFlightClicked()
+{
+    int row = m_flightTable->currentRow();
+    if (row < 0 || row >= m_flightTable->rowCount()) {
+        QMessageBox::warning(this, "Cancel flight", "Please select a flight first.");
+        return;
+    }
+
+    bool ok = false;
+    int flightId = m_flightTable->item(row, 0)->text().toInt(&ok);
+    if (!ok) {
+        QMessageBox::warning(this, "Cancel flight", "Invalid flight ID.");
+        return;
+    }
+
+    auto reply = QMessageBox::question(
+        this,
+        "Cancel flight",
+        QString("Are you sure you want to cancel flight %1?").arg(flightId));
+
+    if (reply != QMessageBox::Yes) {
+        return;
+    }
+
+    if (!m_system->cancelFlight(flightId)) {
+        QMessageBox::warning(this, "Cancel flight", "Could not cancel this flight.");
+        return;
+    }
+
+    populateFlights(m_system->getFlights());
+    QMessageBox::information(this, "Cancel flight", "Flight cancelled successfully.");
 }

@@ -47,6 +47,8 @@ Users can browse sample flights, create bookings, cancel flights, and check live
   - Departure time (local)
   - Arrival time (local)
   - Route (origin → destination) [file:27][file:26]
+  - Note: When the AeroDataBox endpoint returns an array of flight objects (as with `KL641` on `2026-01-21`), the application parses the JSON and maps fields such as origin/destination ICAO codes and scheduled local times into the internal `Flight` model to display in the UI.
+
 
 ---
 
